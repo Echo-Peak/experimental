@@ -1,0 +1,33 @@
+$font:2em;
+$icons:2.5em;
+._header{
+  background:#222;
+  width:100%;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  ._header-pannel{
+    flex:1;
+    order:1;
+  }
+  ._header-title{
+    flex:20;
+    order:2;
+    color:white;
+  }
+  ._header-settings{
+    flex:1;
+    order:3;
+    background:red;
+  }
+
+}
+._settings{
+  display: block;
+  text-align: center;
+  ._settings-trigger{
+    font-size:$icons;
+    transform: translateY(20%);
+    cursor: pointer;
+  }
+}

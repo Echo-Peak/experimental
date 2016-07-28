@@ -1,0 +1,78 @@
+$iconSize:2em;
+.top-bar{
+  position: fixed;
+  z-index: 1000;
+  background:white;
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+   > div:nth-child(1){
+       flex:1;
+      order:1;
+   }
+   > div:nth-child(2){
+       flex:1;
+      order:2;
+
+   }
+}
+
+.tab-bar{
+
+
+  > ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    @for $i from 1 through 5{
+      > li:nth-child(#{$i}){
+        flex:1;
+        order:#{$i};
+
+        cursor:pointer;
+
+
+
+      }
+    }
+
+  }
+.tab{
+  display: flex;
+  flex-direction: row;
+
+  width:100px;
+  height:30px;
+  padding:3px;
+  transition: all .3s;
+  line-height: 30px;
+  &:hover{
+    background:#e0e0e0;
+  }
+ > div:nth-child(1){
+   flex:1;
+   order:1;
+    > i{
+      font-size: 1.6em;
+    }
+ }
+ > div:nth-child(2){
+      flex:4;
+   order:2;
+    > h5{
+        font-family: Arial;
+  padding-left:5px;
+    }
+
+
+
+ }
+}
+}
+.tab-icon-book{color:rgb(19, 111, 140)}
+.tab-icon-youtube{color:rgb(175, 0, 0)}
+.tab-icon-soundcloud{color:rgb(255, 125, 5)}
+.tab-icon-windows{color:rgb(74, 190, 201)}
+.tab-icon-close{color:rgb(255, 60, 60);}

@@ -1,0 +1,26 @@
+<html ng-app="app"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="viewport" content="width=device-width, user-scalable=no"/><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc1/angular-material.min.css" type="text/css"/><link description="font-awesome" rel="stylesheet" href="assets/FA/css/font-awesome.css" type="text/css"/><link description="document-styles" href="styles.css" rel="stylesheet" type="text/css"/><link rel="icon" href="assets/img/icon.png"/><title id="title"></title></head><body ng-controller="GLOBAL as global" text="GLOBAL as global"><div id="container" style="width:100%" class="CONTAINER"><div id="flexbox" ng-style="{'width':global.screen.adjust.width, 'margin-left':global.screen.adjust.marginLeft}" class="flexbox"><header id="header" app-header="" ng-controller="headerController as header"></header><div id="UI" ui-view="" class="UI ui-page-animation"></div><concepts-footer id="footer"></concepts-footer></div><div id="menu" class="MENU"><app-menu></app-menu></div><overlay ng-controller="overlayController as overlay"></overlay><site-settings>   </site-settings></div><scroll-icon></scroll-icon><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script><script>window.angular || document.write("<script src='frameworks/angular.min.js'><\/script>");
+try{
+      angular.module('ngMaterial')
+  } catch(e){
+    document.write("<script src='frameworks/angular-material.min.js'><\/script>")
+  }
+try{
+  angular.module('ngAnimate')
+} catch(e){
+  document.write("<script src='frameworks/angular-animate.min.js'><\/script>")
+}
+try{
+  angular.module('ui.router')
+} catch(e){
+  document.write("<script src='frameworks/angular-ui-router.min.js'><\/script>")
+}
+try{
+  angular.module('ngAria')
+} catch(e){
+  document.write("<script src='frameworks/angular-aria.min.js'><\/script>")
+}        
+try{
+  window.TweenMax
+} catch(e){
+  document.write("<script src='frameworks/TweenMax.min.js'><\/script>")
+}  </script><script src="template.js"></script><script src="Modules.js"></script></body></html>

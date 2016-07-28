@@ -1,0 +1,22 @@
+.scroll-icon{
+    transform: scale(0);
+
+    &.show{
+        animation: scrollShow .4s;
+        animation-fill-mode: forwards;
+    }
+    &.hide{
+        animation: scrollHide .4s;
+        animation-fill-mode: forwards;
+      }
+}
+@keyframes scrollShow {
+    0%{transform: scale(0)}
+    80%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
+@keyframes scrollHide {
+    0%{transform: scale(1)}
+    80%{transform: scale(1.2)}
+    100%{transform: scale(0)}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+    <script type="text/javascript" src='https://cdn.socket.io/socket.io-1.4.5.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      try{
+        document.write('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">')
+      }catch(e){
+        document.write('<link rel="stylesheet" href="res/font-awesome/css/font-awesome.min.css">')
+      }
+
+    </script>
+  </head>
+  <body>
+    <span id='DEBUG-URL' style='position:fixed; padding:10px; background:black; color:white; z-index:10000; right:0px;'>url..</span>
+    <div id='app'></div>
+
+    <script src='internal.js'></script>
+    <script src='components/deps.js'></script>
+    <script src='external.js'></script>
+  </body>
+</html>

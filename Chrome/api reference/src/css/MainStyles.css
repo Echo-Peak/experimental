@@ -1,0 +1,125 @@
+/* line 1, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 7, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+:root {
+  font-size: 20px; }
+
+/* line 11, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+/* line 14, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h1 {
+  font-size: 2rem; }
+
+/* line 17, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h2 {
+  font-size: 1.8rem; }
+
+/* line 20, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h3 {
+  font-size: 1.6rem; }
+
+/* line 23, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h4 {
+  font-size: 1.4rem; }
+
+/* line 26, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h4 {
+  font-size: 1.2rem; }
+
+/* line 29, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+h5 {
+  font-size: 1rem; }
+
+/* line 38, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.temp .home-bottom {
+  background: #2196f3; }
+
+/* line 43, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.app-buttons {
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s; }
+  /* line 48, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .app-buttons:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); }
+
+/* line 52, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.warning {
+  background: #b006cb; }
+
+/* line 56, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.TAB {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  height: 26px;
+  margin-top: 2px;
+  background: rgba(255, 255, 255, 0.5); }
+  /* line 64, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .TAB .close {
+    font-size: .8em;
+    cursor: pointer;
+    color: black;
+    transform: translateY(-5px); }
+    /* line 70, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+    .TAB .close:hover {
+      color: #f44336; }
+  /* line 75, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .TAB .img-container {
+    position: absolute;
+    width: 30px;
+    height: inherit;
+    background: white; }
+    /* line 80, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+    .TAB .img-container i {
+      margin: 5px;
+      color: black; }
+  /* line 85, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .TAB .text {
+    position: relative;
+    color: black;
+    padding-left: 40px;
+    padding-right: 10px; }
+
+/* line 95, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.app-bar .first {
+  display: inline-block;
+  height: inherit; }
+  /* line 100, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .app-bar .first li {
+    font-size: 2em;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #d235d2;
+    cursor: pointer;
+    color: white; }
+    /* line 108, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+    .app-bar .first li:nth-child(2) {
+      margin-left: 2px; }
+
+/* line 115, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.app-bar .title {
+  font-size: 2em;
+  color: white;
+  padding-left: 20px; }
+
+/* line 120, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+.app-bar .settings {
+  display: inline-block;
+  float: right; }
+  /* line 124, C:/WEB PROJECTS/Gulp POWERED Apps/Chrome apps & Chrome extensions/apps/api reference/src/css/MainStyles.scss */
+  .app-bar .settings .icon {
+    transition: all 0.5s;
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+    background: #d235d2;
+    cursor: pointer; }
+
+/*# sourceMappingURL=MainStyles.css.map */

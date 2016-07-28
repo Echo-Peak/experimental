@@ -1,0 +1,26 @@
+{
+  "name": "Hide This!",
+  "manifest_version": 2,
+  "version": "1",
+  "permissions": [
+    "contextMenus" ,"tabs"
+  ],
+  "description": "gives you option to hide elements | ctrl+shift+a to undo last hide or right click > hide this > undo ",
+  "background": {
+    "scripts":["backgroundScript_main.js"]
+      
+  },
+    "content_scripts":[
+        {"matches":["http://*/*" ,"https://*/*" ], "js":["inject.js"]}
+        
+        ],
+    "icons":
+        {"64":"icon.png"},
+    "browser_action":{
+        "default_icon":"icon.png"
+    }
+    
+        
+       
+
+}

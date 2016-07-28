@@ -1,0 +1,4 @@
+section.header-settings--cache
+    h4(ng-style='global.$theme.color') Storage                
+    div
+        md-switch(ng-model='headerSettings.cache.current' ng-click='headerSettings.cache.toggle()') {{headerSettings.cache.current}}

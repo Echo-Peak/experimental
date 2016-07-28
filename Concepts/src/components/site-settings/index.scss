@@ -1,0 +1,124 @@
+@import "../SCSS mixins/flex";
+@import 'create-theme-styles';
+
+.site-settings--flexbox{
+  position: absolute;
+  top:50px;
+  right:0;
+  opacity:0;
+  transform: translate(100% , -100%);
+    @include flexbox(column ,400px , 300px , #222);
+    .site-settings-col-1{
+        @include simpleFlex(1,1,5%,1);
+        padding:5px;
+        border-bottom: 1px solid white;
+        //background:#222;
+    }
+    .site-settings-col-2{
+        @include simpleFlex(15,1,auto,2);
+        @include flexbox(row ,100% , 400px , null);
+        section.col-1{
+            @include simpleFlex(1,1,12%,1);
+            //background:#222;
+
+            border-right:1px solid white;
+
+            div{
+
+                //background:red;
+                margin-bottom: 90px;
+                i{
+                    display: block;
+                    font-size: 4em;
+                    text-align: center;
+                    padding-top:10px;
+                }
+                span{
+
+                    font-size: 1.4em;
+                    display: block;
+                    text-align: center;
+                }
+
+            }
+        }
+        section.col-2{
+            @include simpleFlex(10,1,auto,2);
+            //background:#999;
+            .theme{
+                @include flexbox(row ,100% , 150px , null);
+
+
+                .theme.col-1{
+                    padding:5px;
+                   @include simpleFlex(10,1,auto,1);
+                    @include flexbox(column ,100% , 150px , null);
+                    h4{
+                    font-size: 2em;
+                    }
+                    md-switch{
+                    font-size: 1.8em;
+                    }
+
+
+                }
+                .theme.col-2{
+                    @include simpleFlex(1,1,30%,2);
+                    padding:5px;
+                    font-size: 1.8em;
+                    span{
+                        cursor: pointer;
+
+                    }
+
+                }
+
+
+            }
+            .cache{
+                border-bottom: 1px solid white;
+                 border-top:1px solid white;
+               @include flexbox(row ,100% , 100px , null);
+                .cache.col-1{
+                    @include simpleFlex(10,null,null,1);
+                    display: block;
+                   // background:red;
+
+                    h4{
+                        color:white;
+                    }
+                    .md-button{
+                        display: block;
+                        margin:0;
+                        width:50%;
+                        color:white;
+                    }
+                    md-switch{
+                        margin:5px;
+                        color:white;
+                        font-size: 1.5em;
+                    }
+                }
+                .cache.col-2{
+                    @include simpleFlex(1,null,null,2);
+
+                    i{
+                        cursor: pointer;
+                        font-size: 2.5em;
+                        transition: none;
+                        margin:5px;
+
+                        color:white;
+                        &:hover{
+                            color:red;
+
+                        }
+                    }
+                }
+
+            }
+        }
+        //background:#999;
+
+    }
+}

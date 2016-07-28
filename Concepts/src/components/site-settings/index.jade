@@ -1,0 +1,19 @@
+.site-settings--flexbox(ng-style='global.$theme.background' ,
+ ng-controller='siteSettingsController as settings')
+    .site-settings-col-1
+        h2(ng-style='global.$theme.color') Settings
+    .site-settings-col-2
+        section.col-1
+            div
+                span(ng-style='global.$theme.color') Themes
+                i.fa.fa-paint-brush(ng-style='global.$theme.color')
+            div
+                span(ng-style='global.$theme.color') Storage
+                i.fa.fa-database(ng-style='global.$theme.color')
+        section.col-2
+          include themes.jade
+          include cache.jade
+  div
+    create-theme        
+            
+        

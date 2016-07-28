@@ -1,0 +1,92 @@
+body,html{
+    background:white;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    li,a,ul{
+        list-style: none;
+        text-decoration: none;
+        color:black;
+        margin:0;
+        padding:0;
+    }
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+hr{
+
+}
+._button{
+  //include fancy animation with js
+    outline:0;
+    border:none;
+    background:#EBEBEB;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.28);
+    padding:1% 4%;
+    cursor: pointer;
+    &.sm{
+     padding:10px 20px;
+
+   }
+   &.md{
+    padding:100px;
+
+  }
+  &.lg{
+   padding:20px 40px;
+
+ }
+ &.xl{
+  padding:25px 60px;
+
+}
+
+&:active{
+box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+
+}
+&:hover{
+  -webkit-filter:brightness(1.1);
+}
+
+
+}
+._input{
+  outline:0;
+ padding:5px;
+ font-size: 2em;
+ margin:5px;
+}
+.Container{
+    width:100%;
+    height:100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.APP{
+  width:100%;
+  height:100%;
+  position: inherit;
+}
+.view-shift{
+  position: relative;
+  margin-left: 300px;
+  width:calc(100% - 300px);
+}
+
+@media screen and (min-width:1280px){
+  *{
+    transition: all .3s;
+  }
+}

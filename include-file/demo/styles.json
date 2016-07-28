@@ -1,0 +1,140 @@
+{
+  "users" : {
+    "1dc148a9-26f9-4447-85fd-f70b1858761d" : {
+      "username" : "test4@test.com"
+    },
+    "245e2a26-104f-4e1e-aba2-8276bc14cbfd" : {
+      "username" : "test6testcom"
+    },
+    "3f704a10-36b1-40f2-b74e-7aa1c682f648" : {
+      "username" : "test1@test.com"
+    },
+    "85fd6ccf-e7d9-44b2-81de-e9ef146813b8" : {
+      "username" : "test3@test.com"
+    },
+    "8add8318-3184-45b2-9145-1aa28b2e97d3" : {
+      "username" : "test5@test.com"
+    },
+    "9ff1d870-e115-4bb9-9611-a149dea299c0" : {
+      "groups" : {
+        "default" : {
+          "-KI9_wJ9wtb98VbmGBLJ" : {
+            "body" : "sdsd",
+            "scale" : "5",
+            "title" : "jesus to a child         ko"
+          }
+        }
+      },
+      "username" : "floppy"
+    },
+    "a30d3956-d552-4aa7-8ed1-048b77cd24f7" : {
+      "username" : "test8@test.com"
+    },
+    "aa2867ce-e9b9-40e7-8167-1ce7c86c2c96" : {
+      "username" : "Water-Loo 4 life!"
+    },
+    "b1f0db5b-e56f-4fc1-b33c-bba38ad4ce1c" : {
+      "groups" : {
+        "Grh" : {
+          "-KIAksNtaXx9LHoDyON2" : {
+            "scale" : "0"
+          },
+          "-KIAlqaraKYBwBt-34wC" : {
+            "body" : "Bacon",
+            "scale" : 9,
+            "title" : "Yfd"
+          }
+        },
+        "default" : {
+          "-KIkIuHxBPAYkZtDgVHG" : "sdfs"
+        },
+        "ssd" : {
+          "-KIAoE3mXypUK5sAK-bT" : {
+            "body" : "sd ",
+            "scale" : 0,
+            "title" : "ssd"
+          },
+          "-KIAwQmySbRSr1gpfYeL" : {
+            "body" : "dffd",
+            "scale" : "0",
+            "title" : "dfdf"
+          }
+        }
+      },
+      "username" : "Steve"
+    },
+    "b5dddd50-af4a-45f2-988e-80a3b940ffb6" : {
+      "list" : {
+        "-KHVh_95KSpWKwXUMaMC" : {
+          "body" : "one",
+          "scale" : 0,
+          "title" : "somebody"
+        },
+        "-KHVhbJQoGC5Sh6PkYj5" : {
+          "body" : "dsds",
+          "scale" : 0,
+          "title" : "sd"
+        },
+        "-KHVheW_r3VnmU0zUDpO" : {
+          "body" : "df",
+          "scale" : 1,
+          "title" : "fd"
+        }
+      },
+      "username" : "mick"
+    },
+    "ce348290-27bb-49e1-88d0-93609a8bb09b" : {
+      "list" : {
+        "-KHPJO5wuVSIcWiGwe4_" : {
+          "body" : "rf",
+          "scale" : 0,
+          "title" : "df"
+        },
+        "-KHPJOBH6jbfvyi2ceUF" : {
+          "body" : "rf",
+          "scale" : 0,
+          "title" : "df"
+        },
+        "-KHPJOsWgiG_LJ1F6i18" : {
+          "body" : "rf",
+          "scale" : 0,
+          "title" : "df"
+        },
+        "-KHPJsY-3j2pbuflxNXS" : {
+          "body" : "sd",
+          "scale" : 0,
+          "title" : "s"
+        }
+      },
+      "username" : "neo2264"
+    },
+    "d5615ca0-1774-4569-9fc4-bb46b3562cc7" : {
+      "list" : {
+        "-KH_iYhl8NuE2DPOnbH9" : {
+          "body" : "df",
+          "scale" : 0,
+          "title" : "dfdf"
+        }
+      },
+      "username" : "test7testcom"
+    },
+    "e6d5c4b3-5ba8-468d-bcb5-d58554c326f0" : {
+      "username" : "jacky"
+    },
+    "ede5ae3d-3224-4fa4-b67a-61149194a3cd" : {
+      "list" : {
+        "-KHRdw2lz2pWfA1fRF4B" : {
+          "body" : "Yo yo yooooohooooo!",
+          "scale" : 0,
+          "title" : "Test"
+        },
+        "-KHReV9kJQQ_Kok5rC0j" : {
+          "body" : "Fuuuuucks",
+          "scale" : 0,
+          "title" : "Pop"
+        }
+      },
+      "username" : "Numbnutz"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+div()
+    div(layout='row',style=' top:30px; height:100vh; outline:2px solid green; width:100%; position:relative; top:30px;')
+        div(flex='20'  style='background:yellow; height:inherit; width:10px')
+            
+        div.app-bar(flex='80' style='background:#ab00ab; height:50px; width:10px' , ng-style='global.style.appBar')
+            section.first()
+                li(class='fa fa-home')
+                    md-tooltip Back to intro
+                li(class='fa fa-reply')
+                    md-tooltip Back
+            span.title chrome > window 
+                md-tooltip title
+                
+            section.settings()
+                .icon
+                    i.fa.fa-cog
+                   
+                    md-tooltip(md-direction='left') Open Settings
+                .setting-container
+                
+                
+    
+    

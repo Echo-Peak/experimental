@@ -1,0 +1,593 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <base href="/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@plnkrco">
+    <meta name="twitter:title" content="Untitled">
+    <meta name="twitter:description" content="Created on Plnkr: Helping developers build the web.">
+    
+    <meta name="twitter:image" content="https://shot.plnkr.co/grbegoTH1PVlRoKcFSHa.png?d=2015-09-20T18:55:43.296Z">
+    
+    <title>Untitled - Plunker</title>
+    <link href="/static/build/embed.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/build/embed.js"></script></head>
+</head>
+
+<body ng-app="plunker.embed" ng-controller="PlunkerEmbedController as $ctrl" ng-init="$ctrl.showErrors([]); $ctrl.setPathname('/grbegoTH1PVlRoKcFSHa')">
+    <plunker-embed
+        is-loading="false"
+        tags="[  ]"
+        embed-title="'Untitled'"
+        source="{&#34;type&#34;:&#34;plunker&#34;,&#34;url&#34;:&#34;https://plnkr.co/edit/grbegoTH1PVlRoKcFSHa&#34;}"
+        user="null"
+    >
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="index.html"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+  &lt;head&gt;
+    &lt;script data-require=&#34;<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="71101f16041d10035f1b0231405f455f44">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>&#34; data-semver=&#34;1.4.5&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js&#34;&gt;&lt;/script&gt;
+    &lt;script data-require=&#34;<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="70040715151e1d110830415e41465e41">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>&#34; data-semver=&#34;1.16.1&#34; src=&#34;http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js&#34;&gt;&lt;/script&gt;
+    &lt;script data-require=&#34;<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="d2b3bcb5a7beb3a0ffb3bcbbbfb3a6b792e3fce6fce1">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script>&#34; data-semver=&#34;1.4.3&#34; src=&#34;https://code.angularjs.org/1.4.3/angular-animate.js&#34;&gt;&lt;/script&gt;
+    &lt;link id=&#39;styleSheet&#39; rel=&#34;stylesheet&#34; href=&#34;style.css&#34; /&gt;
+  &lt;/head&gt;
+
+  &lt;body ng-app=&#34;app&#34;&gt;
+    &lt;div ng-controller=&#34;forMockParent&#34;&gt;
+      &lt;!--       &lt;my-parent style=&#39;border:2px solid red&#39;&gt;
+  
+&lt;div style=&#39;background:#fc2; border:2px solid black&#39; title=&#39;{{title}}&#39; toggled=&#39;{{toggler}}&#39;&gt;somthing {{title}}&lt;/div&gt;
+ &lt;my-child style=&#39;background:#e98; border:2px solid green&#39; &gt;&lt;/my-child&gt;
+  
+&lt;/my-parent&gt; --&gt;
+      &lt;mock-parent&gt;
+        &lt;div class=&#34;mock default&#34;&gt;
+    reg html parent {{mockCtrl}} - {{inlineMockCtrl}}
+  &lt;/div&gt;
+        &lt;mock-child class=&#34;mock block hidden&#34;&gt; reg html child {{mockCtrl}} {{mockChild}}&lt;/mock-child&gt;
+      &lt;/mock-parent&gt;
+      &lt;mock-parent&gt;
+        &lt;div class=&#34;mock default&#34;&gt;
+    reg html parent {{mockCtrl}} - {{inlineMockCtrl}}
+  &lt;/div&gt;
+        &lt;mock-child class=&#34;mock block hidden&#34;&gt; reg html child {{mockCtrl}} {{mockChild}}&lt;/mock-child&gt;
+      &lt;/mock-parent&gt;
+    &lt;/div&gt;
+    &lt;!--     &lt;div ng-controller=&#39;finalCtrl&#39;&gt;
+&lt;wrapper&gt;
+ &lt;md-button&gt;&lt;/md-button&gt;
+ &lt;md-content&gt;&lt;/md-content&gt;
+&lt;/wrapper&gt;
+
+    &lt;wrapper&gt;
+ &lt;md-button&gt;&lt;/md-button&gt;
+ &lt;md-content&gt;&lt;/md-content&gt;
+&lt;/wrapper&gt; --&gt;
+    &lt;final-output&gt;&lt;/final-output&gt;
+    &lt;script src=&#34;main2.js&#34;&gt;&lt;/script&gt;
+    &lt;script src=&#34;main3.js&#34;&gt;&lt;/script&gt;
+    &lt;script src=&#39;customAnimations.js&#39;&gt;&lt;/script&gt;
+    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="script.js"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>// Code goes here
+//GOAL -- CREATE CONTROLLER\
+//CREATE 2 DIRECTIVES NESTED IN EACHOTHER\
+//USE CONTROLLER TO SET INFOMATION\
+//MAIN DIRECTIVE NEEDS CONTROLLER\
+//INNER DIRECTIVE INHERITS PARRENT DIRECTIVE\
+//BOTH DIRECTIVES HAVE ISOLATED SCOPES
+//IF I CLICK ON A BUTTON FROM PARRT DIRECTIVE IT WILL TOGGLE CHILD DIRECTIVE 
+
+angular.module(&#39;app&#39;,[&#39;directives.test&#39; , &#39;directives.final&#39;,&#39;myCustomAnimations&#39;]);
+
+
+
+// .controller(&#39;ctrl&#39;,function($scope , data){
+//   var moot = this;
+// moot.test = data.other
+// moot.something = data.other
+// moot.testChild = data.name;
+// moot.testChild2 = data.more
+// moot.parrent = &#39;parent&#39;;
+// moot.title = &#39;title for parent elm&#39;
+
+// $scope.title = data.more
+// $scope.toggler = false;
+// $scope.toggleChild = true;
+ 
+// $scope.toggleFunc = function(){
+//   console.log(&#39;toggled&#39;)
+//     $scope.toggler  = !$scope.toggler 
+// }
+// console.log(data)
+// })
+
+// //transclude needs accses to controllers $scope
+// .directive(&#39;myParent&#39; ,function(){
+//   function link(scope , elm ,attr , ctrl){
+//     scope.myParents = ctrl.test
+
+//     // elm.on(&#39;click&#39;,function(){
+
+
+//     //   scope.$digest()
+      
+//     // })
+
+//   }
+//   return{
+//     restric:&#39;E&#39;,
+//     scope:{
+//       title:&#39;@&#39;,
+      
+//     },
+//     transclude:true,
+//     template:`&lt;div ng-transclude ng-click=&#39;toggle()&#39;&gt;
+//     &lt;h2&gt;{{title}}&lt;/h2&gt;
+//     &lt;/div&gt;`,
+//     link:link,
+//     controller:function($scope){
+//     this.openTarget = false;
+//             var _ctrl = this;
+//             $scope.toggle = function() {
+//                 _ctrl.openTarget = !_ctrl.openTarget;  
+//                 console.log(&#39;loaed&#39;)
+//     }
+//     }
+//   }
+// })
+// .directive(&#39;myChild&#39; ,function(){
+//   function links(scope , elm , attr , ctrl){
+    
+//     scope.myChild = &#39;child&#39;;
+//     scope.myChild2 = &#39;child 2&#39;
+
+//       scope.ctrl = ctrl
+//     //console.log(scope.$parent.$parent.toggler)
+
+
+
+//     if(scope.toggler === false){
+//       console.log(&#39;loaded child&#39;)
+      
+
+//       //TweenMax.to(elm[0], .5 ,{left:100, backgroundColor:&#39;#e0e0e0&#39;, ease:Bounce.easeOut})
+
+      
+//     }
+//   }
+//   return{
+//     restric:&#39;E&#39;,
+//     require:&#39;^myParent&#39;,
+//     transclude:true,
+
+//     template:`
+//   &lt;div style=&#39; position :absolute;&#39; ng-show=&#34;ctrl.toggle&#34; &gt;
+//   {{myChild}}ggffg
+//   &lt;h2&gt;{{myChild2}}&lt;/h2&gt;
+//   &lt;/div&gt;
+//     `,
+//     link:links
+//   }
+// })
+// .service(&#39;data&#39; ,function(){
+//   var obj ={
+//     name:&#39;im a name&#39;,
+//     other:&#39;stuff&#39;,
+//     more:&#39;im a children&#39;
+//   };
+//   return obj
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="style.css"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>/* Styles go here */
+
+.mock{
+  font-size:1.5em;
+
+  display:inline;
+  
+}
+
+.mock.default{
+  background:#e0e0e0;
+}
+.mock.test{
+  border:2px solid red;
+  background:#fc2;
+}
+
+.mock.block{
+  position: absolute;
+  width:1100px;
+  height:auto;
+}
+
+
+.mockFinal{
+ width:100px;
+ background:#fc2;
+ height:100px;
+ position: absolute;
+
+ 
+}
+
+
+
+
+.mock.hidden{
+  left:-500px;
+  opacity:0;
+}
+
+@keyframes bounceDefualt{
+  0%{left:0px}
+  40%{left:200px}
+  50%{left:160px}
+  60%{left:180px}
+  70%{left:170px}
+  80%{left:190px}
+  100%{left:200px}
+}
+
+
+
+
+
+
+</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="main2.js"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>angular.module(&#39;directives.test&#39;,[])
+
+// &lt;mock-parent&gt;
+//   &lt;div class=&#39;mock default&#39;&gt;
+//     reg html parent {{mockCtrl}} - {{inlineMockCtrl}}
+//   &lt;/div&gt;
+  
+//     &lt;mock-child&gt; reg html child {{mockCtrl}} {{mockChild}}&lt;/mock-child&gt;
+//   &lt;/mock-parent&gt;
+
+//directive link scope has accses to parent ctrl scope
+
+//ng-click=&#39;moot = !moot&#39;
+//ng-show=&#39;moot&#39;
+.directive(&#39;mockParent&#39; ,function(){
+  return{
+    restric:&#39;E&#39;,
+    transclude:true,
+     scope:{},
+      controller:&#39;forMockParent&#39;,
+      link:function(scope , elm ){
+  elm.on(&#39;click&#39; ,function(){
+     scope.toggler() 
+    scope.$broadcast(&#39;toggleDiv&#39;)
+  })
+      
+       
+      },
+   
+    template:&#39;&lt;div ng-transclude&gt;&lt;/div&gt;&#39;,
+  };
+})
+.directive(&#39;mockChild&#39; ,function(){
+  return{
+    restric:&#39;E&#39;,
+    scope:{},
+    require:&#39;^mockParent&#39;,
+    link:function(scope,elm ,attr ,ctrl){
+
+
+       scope.$on(&#39;toggleDiv&#39; , function(e){
+         console.log(&#39;ttttttttt&#39;)
+        if(e.targetScope.foo){
+          
+          TweenMax.to(elm[0],.5,{left:200,opacity:1, ease:Elastic.easeOut})
+      
+          console.log(&#39;running&#39;)
+        }else{
+           TweenMax.to(elm[0],2,{left:-600, opacity:0,ease:Expo.easeOut})
+           //elm[0].style.color = &#39;black&#39;
+ 
+        }
+        
+      })
+      
+    }
+  };
+})
+
+.controller(&#39;forMockParent&#39;,function($scope){
+  //console.log($scope, &#39;chained ctrl&#39;)
+  $scope.mockCtrl =&#39;mock controller&#39;;
+  $scope.mockChild =&#39;mock child&#39;;
+$scope.toggler = function(e){
+$scope.foo = !$scope.foo
+}
+
+ 
+  
+})
+//chaained ctrl runs first</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="main3.js"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>
+//goal
+//optimise
+//use ng-if...if possible
+
+
+angular.module(&#39;directives.final&#39;, [])
+  .controller(&#39;finalCtrl&#39;, function($scope) {
+    var objects = this;
+    objects.finalNav = [{
+      title: &#39;one&#39;
+    }, {
+      title: &#39;two&#39;
+    },
+    {title:&#39;three&#39;}
+    
+    
+    ];
+    objects.content=[
+      {title:&#39;test&#39;}
+      ]
+    $scope.finalTog = false;
+$scope.other = false;
+  $scope.toggle = {toggles:true};
+  var m = false;
+    $scope.finalToggler = function() {
+      $scope.finalTog = !$scope.finalTog
+
+    }
+    $scope.finalToggler2 = function(tog){
+      $scope.other= !$scope.other
+
+    } 
+    
+    //console.log(this)
+
+  })
+  .directive(&#39;wrapper&#39;, function() {
+    function link(scope ,elm){
+       elm.ready(function(){
+      
+         elm.find(&#39;button&#39;).on(&#39;click&#39; ,function(){
+
+           scope.finalToggler2()
+           scope.$broadcast(&#39;toggleContent&#39;)
+           scope.$digest()
+         })
+       })
+    }
+    return {
+      restric: &#39;E&#39;,
+      scope:{},
+      transclude:true,
+      template: &#39;&lt;div ng-transclude&gt;g&lt;/div&gt;&#39;,
+      controller:&#39;finalCtrl&#39;,
+      link:link
+      
+    }
+  })
+  
+  .directive(&#39;mdButton&#39;, function() {
+    return {
+      restric: &#39;E&#39;,
+      scope:{},
+      replace:true,
+      transclude:true,
+      require:&#39;^wrapper&#39; ,
+      template: &#39;&lt;button ng-transclude&gt;&lt;/button&gt;&#39;
+    }
+  })
+  .directive(&#39;mdContent&#39;, function() {
+    function link(scope ,elm){
+      
+//           scope.$on(&#39;toggleContent&#39;, function(e) {
+//             //console.log(scope.$parent.$parent.$parent)
+//       e.targetScope.other ? 
+//       // TweenMax.to(elm[0], .5,{opacity:0})  || elm.addClass(&#39;tweenContentReplace&#39;) :
+//       // TweenMax.to(elm[0], .5,{opacity:1}) || elm.removeClass(&#39;tweenContentReplace&#39;)
+// console.log(true):console.log(false)
+//         })
+    }
+    
+    return {
+      restric: &#39;E&#39;,
+      require: [&#39;^wrapper&#39;], 
+      scope:{},
+      replace:true,
+      transclude:true,
+      template:&#39;&lt;div ng-transclude&gt;&lt;/div&gt;&#39;,
+      link:link
+    }
+  })
+  .directive(&#39;finalOutput&#39;, function(){
+    return{
+      restric:&#39;E&#39;,
+      replace:true,
+      templateUrl:&#39;final.html&#39;
+    }
+  });
+
+
+  
+  </code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="final.html"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>
+&lt;div ng-controller=&#39;finalCtrl as objects&#39;&gt;
+&lt;div ng-repeat=&#39;x in objects.finalNav&#39;&gt;
+    &lt;wrapper &gt;
+     &lt;md-button ng-click=&#39;finalTog = !finalTog&#39; &gt;{{x.title}} &lt;/md-button&gt;
+     &lt;md-content class=&#39;mockFinal&#39; ng-if=&#39;finalTog&#39; ng-repeat=&#39;c in objects.content&#39;&gt;
+       &lt;button&gt;{{c.title}}&lt;/button&gt;
+       &lt;/md-content&gt;
+&lt;/wrapper&gt;
+&lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="customAnimations.js"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>
+window.onload = checkTweenCdn
+var tween = TweenMax;
+function checkTweenCdn() {
+  //console.log(window.TweenMax)
+  window.TweenMax ? console.log(&#39;loaded TweenMax&#39;): getStyleSheet()
+  
+  function getStyleSheet(){
+    //NEED TO MAKE HTTP REQUEST
+    //load local tween max 
+    //check for libarys at bottom of head if any are false then &#39;document.write then to bottom of body&#39;
+    var style = document.getElementById(&#39;styleSheet&#39;);
+    style.setAttribute(&#39;href&#39; ,&#39;test.css&#39;);
+  }
+  
+}
+var ani = angular.module(&#39;myCustomAnimations&#39; ,[&#39;ngAnimate&#39;]);
+ani.animation(&#39;.mockFinal&#39;,function(){
+  return{
+    enter:function(elm ,doneFn){
+      
+      window.TweenMax ? tween.to(elm,.5,{left:100, ease:Bounce.easeOut ,onComplete:doneFn}) :
+      console.log(&#39;failed&#39;)
+      
+    },
+    leave:function(elm ,doneFn){
+      tween.to(elm,.5,{left:0,opacity:0, ease:Bounce.easeOut ,onComplete:doneFn})
+    },
+  }
+})</code></pre>
+                
+            
+        
+            
+                
+                    <pre
+                        plunker-embed-preload="content"
+                        type="file"
+                        title="test.css"
+                        charset="utf-8"
+                        decode="html"
+                        
+                    ><code ng-non-bindable>body{
+  background:red;
+}</code></pre>
+                
+            
+        
+    </plunker-embed>
+    
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-28928507-2', 'auto');
+          ga('send', 'pageview');
+        
+        </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+div
+    div.menu-container
+        .menu-bg(ng-style='global.$theme.background')
+            div
+                section.menu-header(text='menu > header')
+                    include menuHeader.jade
+                section.menu-section(text='menu selection' menu-list)
+                    //md-button(ng-repeat='menu in menu.view.displayTitles track by $index' ui-sref='{{::menu[1]}}',
+                            ng-style='global.$theme.accent') {{::menu[0]}}

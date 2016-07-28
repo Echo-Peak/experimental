@@ -1,0 +1,25 @@
+script.
+  try{
+    document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.src.js"><\/script>`)
+  }catch(e){
+    document.write(`<script src="systemjs.js"><\/script>`)
+  } 
+script(src='zone.js')  
+script.
+  try{
+    document.write(`<script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"><\/script>`)
+  }catch(e){
+    document.write(`<script src="rxjs.js"><\/script>`)
+  }
+script.
+  try{
+    document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/reflect-metadata/0.1.3/Reflect.min.js"><\/script>`)
+  }catch(e){
+    document.write(`<script src="reflect.js"><\/script>`)
+  }
+script.
+  try{
+    document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2.dev.js"><\/script>`)
+  }catch(e){
+    document.write(`<script src="angular2.js"><\/script>`)
+  }

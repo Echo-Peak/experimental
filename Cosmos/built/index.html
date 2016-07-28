@@ -1,0 +1,35 @@
+<html><head><meta name="viewport" content="width=device-width"/><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><title id="title">No brand</title><link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"/><link href="assets/FA/css/font-awesome.min.css" title="font-awesome" rel="stylesheet" type="text/css"/><link rel="stylesheet" href="styles.css"/></head><body><div class="Container"><div id="app" class="APP"></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/2.0.0/ReactRouter.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script><script description="fallback for React">try{
+  function addToDom(){
+    console.log('failed to reach cdn React');
+    document.write('<script src="frameworks/react.js"><\/script>');
+  }
+  window.React ? window.React : addToDom()
+}catch(e){
+  console.log('failed to reach cdn React');
+}</script><script description="fallback for ReactDOM">try{
+  function addToDom(){
+    console.log('failed to reach cdn ReactDOM');
+    document.write('<script src="frameworks/react-dom.js"><\/script>');
+  }
+  window.ReactDOM ? window.ReactDOM : addToDom()
+}catch(e){
+  console.log('failed to reach cdn ReactDOM');
+
+}</script><script description="fallback for ReactRouter">try{
+  function addToDom(){
+    console.log('failed to reach cdn ReactRouter');
+    document.write('<script src="frameworks/ReactRouter.js"><\/script>');
+  }
+  window.ReactRouter ? window.ReactRouter : addToDom()
+}catch(e){
+  console.log('failed to reach cdn ReactRouter');
+
+}  </script><script description="fallback for TweenMax">try{
+  function addToDom(){
+    console.log('failed to reach cdn TweenMax');
+    document.write('<script src="frameworks/TweenMax.min.js"><\/script>');
+  }
+  window.TweenMax ? window.TweenMax : addToDom()
+}catch(e){
+  console.log('failed to reach cdn TweenMax');
+} </script><script src="External.js"></script><script src="Components.js"></script></body></html>

@@ -1,0 +1,27 @@
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+    link(rel="stylesheet", href="styles.css")
+    
+    
+  body
+    app-mount Loading...
+    
+    
+    include scripts.jade
+    script.
+      System.config({
+        packages:{
+            compiled:{
+              format:'register',
+              defaultExtension:'js'
+            }
+      
+        }
+      });
+      System.import('app.js').then(null ,function(e){
+        
+        console.log('its workingss');
+        console.error(e)
+      })

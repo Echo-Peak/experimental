@@ -1,0 +1,24 @@
+div
+  .margin-shift
+      .header-flexbox(ng-style='{"background":global.$theme.background.background ,"width":global.screen.adjust.width}')
+          section(text='menu open trigger and home icon' class='menuTrigger')
+              div
+                  li
+                      trigger-menu-event(text='broadcasts event to menu which adds/remove class then emits to global controller to adjust for sreen change')  
+                  li
+                      i.fa.fa-home(text='click to go to home' ui-sref='home' ng-style='global.$theme.color')  
+                  
+                 //i.fa.fa-home(text='click to go to home')
+          section(text='options for diffenet pages' class='options', ng-controller='headerOptionsController as options'  )
+              i.fa.fa-toggle-down(style='font-size:3em; padding-left:10px; line-height:50px; cursor:pointer' ,
+              ng-click='options.openOverlay()',
+              ng-hide='options.overlayShouldHide',
+              ng-style='global.$theme.color')
+              header-page-options
+                  
+          section(text='search docs input bar only' class='searchbar')
+              header-page-search
+              
+          section(text='site setting icon, acts only to toggle site-settings' class='settings-toggle')
+            div
+              li(ng-click="header.toggle_siteSettings()" class="fa fa-cog" ng-style='global.$theme.color')

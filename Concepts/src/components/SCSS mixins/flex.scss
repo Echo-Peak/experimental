@@ -1,0 +1,21 @@
+@mixin flex($flex, $order ,$shrink, $bias ,$height,$width  ,$minWidth ,$minHeight ,$bg){
+    flex: $grow $shrink $bias;
+    order:$order;
+    width:$width;
+    height:$height;
+    min-width: $minWidth;
+    min-height: $minHeight;
+    background: $bg;
+}
+@mixin flexbox($direction ,$width ,$height ,$bg){
+   display: flex;
+    flex-direction: $direction;
+    width:$width;
+    height:$height;
+    background:$bg
+}
+
+@mixin simpleFlex($grow ,$shrink,$bias ,$order){
+    flex:$grow $shrink $bias;
+    order:$order
+}

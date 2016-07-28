@@ -1,0 +1,30 @@
+<html><head><link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/><link rel="stylesheet" href="styles.css"/></head><body><app-mount>Loading...</app-mount><script>try{
+  document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.31/system.src.js"><\/script>`)
+}catch(e){
+  document.write(`<script src="systemjs.js"><\/script>`)
+} </script><script src="zone.js"> </script><script>try{
+  document.write(`<script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"><\/script>`)
+}catch(e){
+  document.write(`<script src="rxjs.js"><\/script>`)
+}</script><script>try{
+  document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/reflect-metadata/0.1.3/Reflect.min.js"><\/script>`)
+}catch(e){
+  document.write(`<script src="reflect.js"><\/script>`)
+}</script><script>try{
+  document.write(`<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2.dev.js"><\/script>`)
+}catch(e){
+  document.write(`<script src="angular2.js"><\/script>`)
+}</script><script>System.config({
+  packages:{
+      compiled:{
+        format:'register',
+        defaultExtension:'js'
+      }
+
+  }
+});
+System.import('app.js').then(null ,function(e){
+  
+  console.log('its workingss');
+  console.error(e)
+})</script></body></html>

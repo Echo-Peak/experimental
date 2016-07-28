@@ -1,0 +1,41 @@
+.ui-overlay
+    .ui-overlay--flexbox-col
+        .columns--flexbox-row
+            section.col-1
+                div(ng-repeat='data in overlay.data.column1')
+                    h3(ng-style='global.$theme.background') {{::data[0]}}
+                    ul
+                        li(ng-repeat='content in data[1].content track by $index' class='li-overlay') {{::content}}
+
+                            
+            section.col-2
+                div(ng-repeat='data in overlay.data.column2')
+                    h3(ng-style='global.$theme.background') {{::data[0]}}
+                    ul
+                        li(ng-repeat='content in data[1].content track by $index' class='li-overlay') {{::content}}
+
+            section.col-3
+                div(ng-repeat='data in overlay.data.column3')
+                    h3(ng-style='global.$theme.background') {{::data[0]}}
+                    ul
+                        li(ng-repeat='content in data[1].content track by $index' class='li-overlay') {{::content}}
+
+            section.col-4
+                div(ng-repeat='data in overlay.data.column4')
+                    h3(ng-style='global.$theme.background') {{::data[0]}}
+                    ul
+                        li(ng-repeat='content in data[1].content track by $index' class='li-overlay') {{::content}}
+
+            section.col-5
+                div(ng-repeat='data in overlay.data.column5')
+                    h3(ng-style='global.$theme.background') {{::data[0]}}
+                    ul
+                        li(ng-repeat='content in data[1].content track by $index' class='li-overlay') {{::content}}
+                      
+                    
+        .bottom-bar(ng-style='global.$theme.background')
+            section.col-1
+
+            section.col-2
+                md-button(ng-style='global.$theme.color' ,id='close') close me
+            section.col-3 

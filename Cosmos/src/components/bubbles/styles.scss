@@ -1,0 +1,33 @@
+$baseSize:200px;
+._bubbles{
+
+}
+._bubbles-title{
+display: inline-block;
+width: $baseSize;
+height:$baseSize;
+  background: rgb(182, 53, 40);
+  border-radius: 100%;
+  line-height: 200px;
+  text-align: center;
+    outline: 1px solid red;
+
+
+}
+$radius:100%;
+$bubbles:_bubbles;
+$random:random(255);
+@for $i from 1 to 10{
+  ._bubbles-#{$i}{
+    border-radius: 100%;
+    width:#{200 - $i * 10}px;
+    height:#{200 - $i * 10}px;
+    line-height:#{200 - $i * 10}px;
+    text-align: center;
+    background:rgb(random(255),random(255),random(255));
+    position: absolute;
+    transform:translateY( #{-100%  - $i});
+    color:#{$i};
+    outline: 1px solid red;
+  }
+}

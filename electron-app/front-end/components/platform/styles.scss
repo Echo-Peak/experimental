@@ -1,0 +1,125 @@
+$localBG: radial-gradient(ellipse at center, #ffffff 0%,#93eded 100%);
+$youtubeBG:radial-gradient(ellipse at center, #ff3f3f 0%,#bf0000 100%);
+$soundCloudBG:radial-gradient(ellipse at center, #f29b4f 0%,#f27500 100%);
+$bandcampBG:radial-gradient(ellipse at center, #62c9c6 0%,#00bdc4 100%);
+
+@mixin PlatformCard($platform) {
+  > .platform-#{$platform}-margins {
+    height: 500px;
+    width: 250px;
+    > div:nth-child(1) {
+      height: 250px;
+      > .platform-#{$platform}-img {
+        text-align: center;
+        height: 150px;
+        img {
+          width: 212px;
+        }
+      }
+      > .platform-#{$platform}-heading {
+        > p {
+          padding: 10px;
+          font-family: Arial;
+          color: white;
+          margin: 0;
+        }
+      }
+    }
+    > div:nth-child(2) {
+      height: 250px;
+    }
+  }
+}
+
+
+
+.platform{
+  width:100%;
+  height:100%;
+  background:rgb(random(255),random(255),random(255));
+  position: absolute;
+  overflow: hidden;
+  > .platform-margin-auto{
+    width:80%;
+    height:250px;
+    margin:100px auto;
+    background:rgb(random(255),random(255),random(255));
+    display: flex;
+    flex-direction: row;
+    min-width:1080px;
+
+    .platform-local{
+      flex:1;
+      order:1;
+      margin:10px;
+      cursor: pointer;
+      min-width: 250px;
+      overflow: hidden;
+      display: block;
+      background:$localBG;
+
+
+      @include PlatformCard('local');
+    }
+    .platform-youtube{
+      flex:1;
+      order:2;
+      margin:10px;
+      cursor: pointer;
+      overflow: hidden;
+      min-width: 250px;
+      background:$youtubeBG;
+      @include PlatformCard('youtube');
+    }
+    .platform-soundcloud{
+      flex:1;
+      order:3;
+      margin:10px;
+      cursor: pointer;
+      overflow: hidden;
+      min-width: 250px;
+      background:$soundCloudBG;
+      @include PlatformCard('soundcloud');
+    }
+    .platform-bandcamp{
+      flex:1;
+      order:4;
+      margin:10px;
+      cursor: pointer;
+      overflow: hidden;
+      min-width: 250px;
+      background:$bandcampBG;
+      @include PlatformCard('bandcamp');
+    }
+  }
+}
+
+.platform-menu{
+  position: absolute;
+  top:0;
+  left:0;
+  width:auto;
+  height:auto;
+  transition: all .4s;
+  transform: translate(6% ,20%);
+}
+.platform-local-menu{
+  background:white;
+  width:150px;
+
+  > ul{
+    margin:0;
+    padding:0;
+    > li{
+    transition: all .2s;
+      padding:10px;
+      text-align: center;
+      list-style: none;
+
+      &:hover{
+        background:black;
+        color:white;
+      }
+    }
+  }
+}

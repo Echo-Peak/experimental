@@ -1,0 +1,19 @@
+.custum-theme-overlay
+    section.col-1
+        md-input-container
+            label(style='font-size:1.8em') Enter a name
+            input(type="text")
+    section.col-2
+        .text
+            span Text 
+            input(type="color" name='text-color' ,value ='#1aa3ff')
+        .background
+            span Background
+            input(type="color" name='background-color' ,value ='#ffa64d')
+        .accent
+            span Accent
+            input(type="color" name='accent-color' ,value='#d24dff')
+        
+    section.col-3
+        md-button#applyTheme(ng-click='settings.createTheme()') Apply and Save
+        md-button#close(ng-click='settings.exit()') Exit

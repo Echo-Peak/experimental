@@ -1,0 +1,27 @@
+div
+    section(hide-gt-sm)
+        section(aria-text='enter emial') 
+            md-input-container(style='font-size:2em')
+                label Email
+                input(type='text')
+        section(aria-text='enter comments') 
+            md-input-container(style='font-size:2em')
+                label Enter Comments
+                textarea
+        div(layout='row')        
+            md-button(flex aria-text='submit button') Submit        
+    section(hide-lg , hide-sm , hide-gt-lg)
+        md-input-container
+            label Email
+ 
+    section(hide-md , hide-gt-lg , hide-sm)
+        md-input-container
+            label Email
+
+    section( hide-md  , hide-sm , hide-lg)    
+        md-input-container
+            label Email
+            input(type='text')
+
+    
+

@@ -1,0 +1,30 @@
+html(ng-app='app')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+    link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc1/angular-material.min.css" type='text/css')
+    link(description="font-awesome" rel="stylesheet", href="assets/FA/css/font-awesome.css" type='text/css')
+    link(description='document-styles' href='styles.css', rel='stylesheet' type='text/css')
+    link(rel='icon' ,href='assets/img/icon.png')
+    title(id='title')
+  body(ng-controller='GLOBAL as global' text='GLOBAL as global')
+     
+    .CONTAINER#container(style='width:100%')
+      .flexbox#flexbox(ng-style="{'width':global.screen.adjust.width, 'margin-left':global.screen.adjust.marginLeft}")
+        header#header(app-header='' ng-controller='headerController as header')
+            
+        .UI#UI(ui-view='' class='ui-page-animation')
+        concepts-footer#footer
+
+      .MENU#menu
+        app-menu
+      overlay(ng-controller='overlayController as overlay')
+      site-settings    
+      
+    scroll-icon
+    
+    include fallback-scripts.jade
+    script(src='template.js')
+    script(src='Modules.js')
+    

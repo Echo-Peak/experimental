@@ -1,0 +1,60 @@
+
+@mixin topLeft(){
+
+}
+@mixin right(){
+
+}
+@mixin left(){
+
+}
+@mixin bottom(){
+
+}
+
+@mixin openStyles(){
+  .open-from-top-left{
+  height:200px;
+  width:250px;
+
+
+}
+& > .open-from-right{@include right()}
+& > .open-from-left{@include left()}
+& > .open-from-bottom{@include bottom()}
+}
+
+
+.App-menu{
+    background:red;
+    //width:200px;
+overflow: hidden;
+position: relative;
+     .App-menu-content{
+min-width: 200px;
+height: auto;
+       position: relative;
+      overflow: hidden;
+      flex-direction: column;
+    transform: scale(0);
+
+
+    }
+@include openStyles();
+}
+
+.appMenu-button{
+  border:none;
+  outline:0px;
+  width:auto;
+  height:auto;
+box-shadow: 1px  1px 15px rgba(0,0,0,0.5);
+  position: relative;
+  background:none;
+  transition:background .3s;
+  cursor: pointer;
+  &:hover{
+    background:rgba(255,255,255,0.5);
+    box-shadow: 1px  1px 20px rgba(0,0,0,0.5);
+  }
+}

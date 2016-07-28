@@ -1,0 +1,19 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+    "icons":{
+        "32":"assets/icon32.png",
+        "64":"assets/icon64.png",
+        "128":"assets/icon128.png",
+        "256":"assets/icon256.png"
+            
+        
+    },
+   "manifest_version": 2,
+   "name": "Chrome app API",
+   "permissions": ["storage" ,"contextMenu","messages" ,"fileSystem"],
+   "version": "1"
+}

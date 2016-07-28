@@ -1,0 +1,13 @@
+.theme
+    .theme.col-1
+        h4(ng-style='global.$theme.color') Select a theme
+        md-menu(md-offset='0 50' )
+            md-button(ng-click="$mdOpenMenu($event)" ,md-menu-origin
+                    aria-label='no this dont' ,style='margin:0; width:100%' ,ng-style='global.$theme.color') {{settings.currentTheme}}
+            md-menu-content(width='4')
+                theme-list
+        md-switch(ng-style='global.$theme.color' ,ng-model='settings.themeModel',
+                ng-click='settings.themeToggler()') enabled | {{settings.themeStatus}}  
+    .theme.col-2
+        span(ng-style='global.$theme.color'
+        ng-click='settings.toggleCustomThemes()') Custom?

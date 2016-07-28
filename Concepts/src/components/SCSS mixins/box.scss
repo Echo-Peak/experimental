@@ -1,0 +1,12 @@
+@mixin generateBorder(){
+    position: absolute;
+    background:$borderGradient;
+    width:100%;
+    height:100%;
+    padding:5px;
+    top:-5px;
+    left:-5px;
+    content: '';
+    z-index: -1;
+    border-radius: 20px;
+}

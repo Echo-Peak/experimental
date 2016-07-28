@@ -1,0 +1,23 @@
+{
+  "name": "UPPERCASE or lowercase",
+  "manifest_version": 2,
+  "version": "1",
+  "permissions": [
+    "contextMenus"
+  ],
+  "description": "this is a desc i cant write",
+  "background": {
+    "scripts":["backgroundScript_main.js"]
+      
+  },
+    "content_scripts":[
+        {"matches":["http://*/*" ,"https://*/*" ], "js":[ "inject.js"]}
+        
+        ],
+    "icons":
+        {"64":"icon.png"}
+    
+        
+       
+
+}

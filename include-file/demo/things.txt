@@ -1,0 +1,78 @@
+var a = `
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+//import user from './user-actions'
+
+//compiledi
+
+var foo = exports.foo = {
+
+  out: File(\'stuff.html\'),
+  stuffa: ''
+};
+`;
+
+var html = `
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello world<\/title>
+    <\/script>
+  <\/head>
+  <body>
+
+  <\/body>
+<\/html>
+
+`;
+
+var reg = new RegExp(`(.File[\(](.+?)[\)].)` ,'gm');
+let newlines = /\n+?/mg;
+//console.log(html.trim().split(newlines),'')
+
+let match = a.replace(reg ,function(found , capture ,index){
+  let delems = found[0] || found[found.length-1];
+  let file = html.trim().split(newlines);
+  let formated;
+  console.log(found)
+  switch(false){
+    case "'":{
+      file.forEach(function(line ,index ,array){
+        if(index + 1 === array.length){
+          formated += `'${line}'`;
+        }else{
+          formated += `'${line}'+\n`;
+        }
+
+
+      });
+    }break;
+    case '"':{
+       file.forEach(function(line ,index ,array){
+        if(index + 1 === array.length){
+          formated += `"${line}";`;
+        }else{
+          formated += `"${line}"+\n`;
+        }
+
+
+      })
+
+    }
+  }
+
+
+
+  console.log(formated);
+
+
+
+ // console.log(found ,delems)
+})
+
+//console.log(match)

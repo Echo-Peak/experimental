@@ -1,0 +1,5 @@
+div(class="page-options")
+  md-menu(md-offset="0 40")
+    i(ng-click="$mdOpenMenu($event)" ng-blur="$mdCloseMenu($event)" class="fa fa-th-large toggle" ng-style='global.$theme.color')
+    md-menu-content#header_options
+  h4(style='display:inline;padding-left:10px', ng-style='global.$theme.color') {{options.title}}

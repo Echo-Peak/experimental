@@ -1,0 +1,8 @@
+.cache
+    .cache.col-1
+        h4(ng-style='global.$theme.color') Slect to cache website
+        md-button(ng-style='global.$theme.color') {{settings.cacheStatus}}
+        md-switch(ng-model='settings.cache' ng-style='global.$theme.color', ng-click='settings.setCache()')
+    .cache.col-2
+        i.fa.fa-close(ng-style='global.$theme.color' , ng-click='settings.flushCache()')
+        md-tooltip empty template cache

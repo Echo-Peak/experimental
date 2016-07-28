@@ -1,0 +1,34 @@
+.homepage{
+  width:100%;
+  height:100%;
+  //background: rgb(271,92,8);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  > .home-menu{
+    flex:1;
+    order:2;
+    //background:yellow;
+    width:400px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    >  .home-menu-version{
+      flex:1;
+      order:1;
+    //  background:yellow;
+    }
+    >  .home-menu-menu{
+      flex:14;
+      order:2;
+    //  background:blue;
+    }
+  }
+  > .home-aside{
+  flex:1;
+  order:3;
+  //background:green;
+  }
+
+}
